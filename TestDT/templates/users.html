@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>USUARIOS</h1>
+
+    <ul>
+        {% for usuario in users %}
+            <div>
+                <h2>{{usuario.employeeName}} </h2>     &emsp; {% if usuario.create == True %} 
+                {{usuario.employeeNumber}}&emsp;
+                <button>❌ Delete</button>&emsp;<button>✅ Create</button>
+                {%else%}
+                {{usuario.employeeNumber}}
+                {%endif%}
+
+            </div>
+        {% endfor %}
+
+
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    {% load static %}<link href="{% static '/styles.css' %}" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<style>
+    table, th, td {
+      border:1px solid black;
+    }
+    </style>
+<table>
+    <tr>
+        <td>
+            <div id="logo">
+                {% load static %}
+                <img src="{% static '/AFG_U2I.jpg' %}"/>
+                
+            </div>
+        </td>
+        <td>
+            <div id="titre" style="font-size: 50px">PRUEBA ELECTRICA AFG</div>
+        </td>
+        <td>
+            <div id="logo">
+                {% load static %}
+                <img src="{% static '/logoasteel.jpg' %}"/>
+                
+            </div>
+        </td>
+    </tr>
+</table>
+</body>
+{% block branding %}
+{% endblock %}
+{% block content %}
+{% endblock %}
+
+<footer> 
+    <meta charset="utf-8">
+    <title>Django Auth Tutorial</title>
+  </footer> 

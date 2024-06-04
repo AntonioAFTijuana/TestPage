@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>{{t}}</h1>
+
+    <ul>
+        {% for computer in pc %}
+            <li>{{computer.PCName}}</li>
+        {% endfor %}
+
+
+    </ul>
+
+    {% endblock %}

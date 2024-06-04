@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Electrical Test Page</h1>
+
+    <ul>
+        {% for model in models %}
+        {% if model.ActiveModel == 1 %} 
+            <li>{{model.Modelo}} ----{{model.ActiveModel}}</li>
+            {%endif%}
+        {% endfor %}
+
+
+    </ul>
+
+{% endblock %}
